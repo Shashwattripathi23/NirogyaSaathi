@@ -1,0 +1,10 @@
+{
+  "userName": "Tripathi",
+  "email": "user@exampdddle.com",
+  "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyZGMxYWJhMy04MmQ4LTQwMWItYTBhMi0wNDEwMWUyOTkxYzAiLCJnaXZlbl9uYW1lIjoiVHJpcGF0aGkiLCJuYmYiOjE3MTc1NzYxODYsImV4cCI6MTcxODE4MDk4NiwiaWF0IjoxNzE3NTc2MTg2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUxMDAiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxMDAifQ.i5ZWPwEO0izsji85vU0uJoH9pdZnUB2me55NFFwret7kzlx3dcH2ecGTkCR2KcYlZneEpqhzqaSvfouwHytEEg"
+}
+
+
+
+"userName": "Sagar45Gaire45YYR1",
+"dynamicPassword": "Sagar06052024083049N"

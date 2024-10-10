@@ -1,0 +1,34 @@
+forgot password11
+support 11
+colour change11
+register a patient(check for existing details)
+NSId(12 digits) yymmddG.....
+add doctor details above form.11
+
+(YYMMDDMHHMM(LAST 3 DIG(db)))
+
+doctor's degree, photo , clinic adress, cloniclogo
+add general follow up date box
+
+make page responsive
+
+use bootstrap
+
+store procedure
+
+presId
+
+overflow: fix
+
+align address field, textarea
+
+use quote font1
+show more details on finder1
+
+pdf.... text fieds ...wide1
+
+add offlinepres
+	
+delete part for medicine and hpi 1
+
+make comb9ined, save and generate pdf 1

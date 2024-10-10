@@ -1,0 +1,315 @@
+[
+    {
+        "name": "Baba Booyie",
+        "age": 30,
+        "gender": "M",
+        "phone": "123-456-7890",
+        "email": "demo@gmail.com",
+        "NSID": "123456789",
+        "address": "1234 Fake St",
+        "weight": 45,
+        "adhar": "1234 5678 9012",
+        "prescriptions": [
+            {
+                "visit": "2020-04-01",
+                "type": "General",
+                "id": "123456",
+                "temperature": 98.6,
+                "ltd": ["diabetes", "thyroid"],
+                "allergies": ["penicillin"],
+                "complaint": "fever",
+                "HPI": [
+                    {
+                        "title": "Fever",
+                        "description": "Fever for 3 days"
+                    },
+                    {
+                        "title": "Cough",
+                        "description": "Cough for 2 days"
+                    }
+                ],
+                "diagnosis": "Viral fever",
+                "tests": "CBC, Typhoid",
+                "notes": "Take rest and drink plenty of fluids",
+                "additionaltags": ["fever", "viral"],
+                "nextvisit": "2020-04-05",
+                "documents": [
+                    {
+                        "name": "xray.png",
+                        "data": "base64"
+                    },
+                    {
+                        "name": "report.pdf",
+                        "data": "base64"
+                    }
+                ],
+                "medicines": [
+                    {
+                        "name": "Crocin",
+                        "quantity": "1-0-1",
+                        "frequency": "3 days",
+                        "route": "oral",
+                        "duration": "3 days",
+                        "notes": "Take after food"
+                    },
+                    {
+                        "name": "Azithromycin",
+                        "quantity": "1-0-1",
+                        "frequency": "3 days",
+                        "route": "oral",
+                        "duration": "3 days",
+                        "notes": "Take after food"
+                    },
+                    {
+                        "name": "Cough syrup",
+                        "quantity": "1-0-1",
+                        "frequency": "3 days",
+                        "route": "oral",
+                        "duration": "3 days",
+                        "notes": "Take after food"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Baba Booyie",
+        "age": 32,
+        "gender": "F",
+        "phone": "123-456-7890",
+        "email": "demo2@gmail.com",
+        "NSID": "987654321",
+        "address": "4321 Fake St",
+        "weight": 50,
+        "adhar": "4321 8765 2109",
+        "prescriptions": [
+            {
+                "visit": "2021-06-15",
+                "type": "Dermatology",
+                "id": "654321",
+                "temperature": 98.7,
+                "ltd": ["eczema"],
+                "allergies": ["pollen"],
+                "complaint": "skin rash",
+                "HPI": [
+                    {
+                        "title": "Skin Rash",
+                        "description": "Rash for 5 days"
+                    }
+                ],
+                "diagnosis": "Allergic reaction",
+                "tests": "Skin biopsy",
+                "notes": "Apply prescribed ointment",
+                "additionaltags": ["rash", "allergy"],
+                "nextvisit": "2021-06-20",
+                "documents": [
+                    {
+                        "name": "skin_report.pdf",
+                        "data": "base64"
+                    }
+                ],
+                "medicines": [
+                    {
+                        "name": "Hydrocortisone cream",
+                        "quantity": "apply twice",
+                        "frequency": "daily",
+                        "route": "topical",
+                        "duration": "5 days",
+                        "notes": "Apply to affected area"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Alice Smith",
+        "age": 29,
+        "gender": "F",
+        "phone": "321-654-0987",
+        "email": "alice@example.com",
+        "NSID": "123123123",
+        "address": "5678 Real St",
+        "weight": 55,
+        "adhar": "5678 1234 0987",
+        "prescriptions": [
+            {
+                "visit": "2022-03-10",
+                "type": "Gynecology",
+                "id": "789012",
+                "temperature": 98.5,
+                "ltd": ["PCOS"],
+                "allergies": ["none"],
+                "complaint": "irregular periods",
+                "HPI": [
+                    {
+                        "title": "Irregular Periods",
+                        "description": "Irregular periods for 6 months"
+                    }
+                ],
+                "diagnosis": "PCOS",
+                "tests": "Ultrasound",
+                "notes": "Follow prescribed medication and diet",
+                "additionaltags": ["PCOS", "irregular periods"],
+                "nextvisit": "2022-04-10",
+                "documents": [
+                    {
+                        "name": "ultrasound.png",
+                        "data": "base64"
+                    }
+                ],
+                "medicines": [
+                    {
+                        "name": "Metformin",
+                        "quantity": "1-0-1",
+                        "frequency": "daily",
+                        "route": "oral",
+                        "duration": "30 days",
+                        "notes": "Take after food"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Bob Johnson",
+        "age": 45,
+        "gender": "M",
+        "phone": "123-456-7890",
+        "email": "bob@example.com",
+        "NSID": "456789012",
+        "address": "9876 Example St",
+        "weight": 70,
+        "adhar": "7890 1234 5678",
+        "prescriptions": [
+            {
+                "visit": "2023-01-25",
+                "type": "Cardiology",
+                "id": "234567",
+                "temperature": 98.6,
+                "ltd": ["hypertension"],
+                "allergies": ["aspirin"],
+                "complaint": "chest pain",
+                "HPI": [
+                    {
+                        "title": "Chest Pain",
+                        "description": "Chest pain for 1 week"
+                    }
+                ],
+                "diagnosis": "Angina",
+                "tests": "ECG",
+                "notes": "Follow prescribed medication and avoid stress",
+                "additionaltags": ["angina", "chest pain"],
+                "nextvisit": "2023-02-15",
+                "documents": [
+                    {
+                        "name": "ecg.png",
+                        "data": "base64"
+                    }
+                ],
+                "medicines": [
+                    {
+                        "name": "Nitroglycerin",
+                        "quantity": "1-0-1",
+                        "frequency": "as needed",
+                        "route": "sublingual",
+                        "duration": "as needed",
+                        "notes": "Take at onset of chest pain"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Charlie Brown",
+        "age": 40,
+        "gender": "M",
+        "phone": "555-123-4567",
+        "email": "charlie@example.com",
+        "NSID": "888777666",
+        "address": "1212 Walnut St",
+        "weight": 85,
+        "adhar": "1111 2222 3333",
+        "prescriptions": [
+            {
+                "visit": "2024-02-15",
+                "type": "Orthopedics",
+                "id": "345678",
+                "temperature": 98.7,
+                "ltd": ["arthritis"],
+                "allergies": ["sulfa drugs"],
+                "complaint": "joint pain",
+                "HPI": [
+                    {
+                        "title": "Joint Pain",
+                        "description": "Joint pain in knees for 3 months"
+                    }
+                ],
+                "diagnosis": "Osteoarthritis",
+                "tests": "X-ray",
+                "notes": "Follow prescribed exercises and medications",
+                "additionaltags": ["arthritis", "joint pain"],
+                "nextvisit": "2024-03-15",
+                "documents": [
+                    {
+                        "name": "xray_knee.png",
+                        "data": "base64"
+                    }
+                ],
+                "medicines": [
+                    {
+                        "name": "Ibuprofen",
+                        "quantity": "1-0-1",
+                        "frequency": "daily",
+                        "route": "oral",
+                        "duration": "30 days",
+                        "notes": "Take after food"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sarah Connor",
+        "age": 28,
+        "gender": "F",
+        "phone": "444-555-6666",
+        "email": "sarah@example.com",
+        "NSID": "999888777",
+        "address": "2323 Cedar St",
+        "weight": 60,
+        "adhar": "4444 5555 6666",
+        "prescriptions": [
+            {
+                "visit": "2024-05-20",
+                "type": "General",
+                "id": "456789",
+                "temperature": 98.4,
+                "ltd": ["none"],
+                "allergies": ["peanuts"],
+                "complaint": "headache",
+                "HPI": [
+                    {
+                        "title": "Headache",
+                        "description": "Headache for 1 week"
+                    }
+                ],
+                "diagnosis": "Tension headache",
+                "tests": "None",
+                "notes": "Rest and avoid stress",
+                "additionaltags": ["headache", "tension"],
+                "nextvisit": "2024-06-10",
+                "documents": [],
+                "medicines": [
+                    {
+                        "name": "Paracetamol",
+                        "quantity": "1-0-1",
+                        "frequency": "daily",
+                        "route": "oral",
+                        "duration": "5 days",
+                        "notes": "Take after food"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,5 @@
+@media print {
+    .printableContent {
+      width: 100% !important;
+    }
+  }
