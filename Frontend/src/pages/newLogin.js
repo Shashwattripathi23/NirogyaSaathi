@@ -104,6 +104,15 @@ function NewLogin() {
         >
           Please log in to access your personalized dashboard and view your
           patient visit history.
+          <br />
+          Note: For demo purposes, use
+          <br /> email:
+          <span className="font-bold">
+            {" "}
+            doc123@gmail.com
+          </span>{" "}
+          and password: <span className="font-bold">doc123</span>
+
         </h3>
         {isWrong && (
           <h1
