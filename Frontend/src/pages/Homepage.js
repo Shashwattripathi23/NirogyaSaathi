@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import NewLogo from "../images/NewLogo.png";
 import Call from "../images/call.png";
 import Mail from "../images/Mail.png";
@@ -14,7 +15,93 @@ import end1 from "../images/enda.png";
 import lineW from "../images/LineW.png";
 
 import Chatbot from "./Chatbot";
+
 function Homepage() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Check if width is less than 768px (Tablets/iPads usually start at 768px)
+      if (window.innerWidth < 768) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    handleResize(); // Check on load
+    window.addEventListener("resize", handleResize); // Check on resize
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // --- MOBILE VIEW (Optimized Header + BG + Warning) ---
+  if (isMobile) {
+    return (
+      <div className="flex flex-col h-screen w-screen overflow-hidden font-inter">
+        {/* Optimized Header */}
+        <div className="bg- -to-r from-custom-blue-dark to-custom-blue-light h-16 w-full flex items-center justify-between px-5 shadow-lg z-20 shrink-0">
+          <img src={NewLogo} className="h-8 w-auto" alt="logo" />
+        </div>
+
+        {/* Main Content with Background Image */}
+        <div
+          className="flex-1 w-full bg-cover bg-center flex flex-col items-center justify-center text-center px-6 relative"
+          style={{
+            backgroundImage: `url(${bg1})`,
+          }}
+        >
+          {/* Dark Overlay for text readability */}
+          <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+          <div className="z-10 flex flex-col items-center animate-fade-in-up">
+            {/* Tagline from Main Page */}
+            <h1 className="text-white text-4xl font-bold font-roboto mb-2 drop-shadow-md">
+              Healthcare
+            </h1>
+            <h1 className="text-white text-3xl font-bold font-roboto mb-4 drop-shadow-md">
+              Digitization Hub!
+            </h1>
+            <p className="text-gray-200 text-sm font-light mb-10 max-w-xs leading-relaxed">
+              A user-friendly portal for doctors to manage patient visit
+              history and medical records.
+            </p>
+
+            {/* Warning Message Card */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-2xl max-w-xs mx-auto border-t-4 border-custom-blue-dark">
+              <div className="mb-3 flex justify-center">
+                {/* Optional: Icon implying screen size */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-10 w-10 text-custom-blue-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-gray-800 font-bold text-lg mb-2">
+                Desktop Experience
+              </h3>
+              <p className="text-gray-600 text-sm">
+                For the best experience and to access complex medical records,
+                please open this link on a <b>Tablet</b> or <b>Desktop</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // --- DESKTOP / TABLET VIEW ---
   return (
     <>
       {/* <Chatbot /> */}
@@ -495,7 +582,7 @@ function Homepage() {
                     window.location.href = "home";
                   }}
                 >
-                  {"     "}
+                  {"    "}
                   Home{" "}
                 </span>
               </h3>
@@ -520,7 +607,7 @@ function Homepage() {
                     window.location.href = "contact";
                   }}
                 >
-                  {"     "}
+                  {"    "}
                   Contact Us{" "}
                 </span>
               </h3>
@@ -545,7 +632,7 @@ function Homepage() {
                     window.scrollTo(0, 1000);
                   }}
                 >
-                  {"     "}
+                  {"    "}
                   About Us{" "}
                 </span>
               </h3>
@@ -570,7 +657,7 @@ function Homepage() {
                     window.location.href = "contact";
                   }}
                 >
-                  {"     "}
+                  {"    "}
                   Join Us{" "}
                 </span>
               </h3>
